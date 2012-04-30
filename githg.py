@@ -34,6 +34,7 @@ hg gexport
 ln -s .hg/git .git
 git branch master hg/default
 git config core.bare false
+git config core.worktree `pwd`
 git reset --hard
 # Ignore the .hg stuff
 echo '.hg' >> .git/info/exclude
